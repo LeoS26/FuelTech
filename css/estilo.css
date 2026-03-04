@@ -1,0 +1,60 @@
+/*Estilização padrão da pagina*/
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Estilização do Header da página*/
+header{
+    background-color: brown;
+    padding: 40px 0 40px 0;
+}
+.logo{
+    width: 12%;
+    padding-left: 5%;
+}
+nav{
+    color: black;
+    position: absolute;
+    top: 10%;
+    font-size: 35;
+    font-family: cursive;
+    right: 2%;
+}
+nav li{
+    display: inline;
+    margin-right: 40px;
+}
+.divHeader{
+    position: relative;
+}
+
+/*Estilização do Banner*/
+.banner{
+    width: 100%;
+    height: 60%;
+    object-position: center;
+    
+}
+
+/*Estilização da Sessão SOBRE NÓS*/
+.sobre_nos{
+    width: 100vh;
+    margin-left: 15%;
+    text-align: justify;
+
+}
+.img_sobrenos{
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-right: 20px;
+}
+.titulo_sobre_nos{
+    clear: left;
+    text-align: center;
+    
+}
+.sobre_nos p{
+    white-space: nowrap;
+    font-size: 20;
+}
