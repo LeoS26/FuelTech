@@ -1,0 +1,138 @@
+/*Estilização padrão da pagina*/
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Estilização do Header da página*/
+header{
+    background-color: brown;
+    padding: 40px 0 0 0;
+}
+.logo{
+    width: 12%;
+    padding-left: 5%;
+    padding-bottom: 20px;
+}
+nav{
+    color: black;
+    position: absolute;
+    top: 10%;
+    font-size: 35;
+    font-family: cursive;
+    right: 2%;
+}
+nav li{
+    display: inline;
+    margin-right: 40px;
+}
+.divHeader{
+    position: relative;
+}
+
+/*Estilização do Banner*/
+.banner{
+    width: 100%;
+    height: 60%;
+    object-position: center;
+    
+}
+
+
+/*Estilização dos titulos*/
+.titulos{
+    text-align: center;
+}
+
+
+/*Estilização da Sessão SOBRE NÓS*/
+.sobre_nos{
+    margin: 0;
+    text-align: justify;
+    width: 65%;
+    margin-left: 18%;
+}
+.img_sobrenos{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+}
+.titulo_sobre_nos{
+    clear: left;
+    text-align: center;   
+}
+/**Estilização da sessão Nosso Estabelecimento*/
+.mapa{
+    text-align: center;
+    border-radius: 50px;
+}
+/*Estilização da Sessão Lista de Produtos*/
+main{
+     background: linear-gradient(#ffffff, #bd0303);
+    height: 1800;
+}
+
+.nossosprodutos{    
+    padding: 2%;
+}
+.div_nossosprodutos{
+    width: 70%;
+    margin-left: 30%;
+}
+.img_nossosprodutos{
+    width: 15%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px;
+    opacity: 1;
+    transition: 400ms;
+}
+.img_nossosprodutos:hover{
+    opacity: 0.5;
+    
+}
+.lista_nossosprodutos{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
+.lista_nossosprodutos li{
+    line-height: 2;
+    margin-left: 25%;
+}
+.video{
+    padding: 5% 0 0 31%;
+
+}
+footer img{
+    padding: 5% 0 0 18%;
+    
+}
+footer{
+    background: url("../img/logo.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    padding: 30px 10px 10px 0;
+    
+}
+footer p{ 
+    margin: 0;
+    margin-left: 66%;
+    color: #ffffff;
+    width: 500px;
+    text-align: right;
+    font-size: 20px;   
+}
+footer i {
+    color: white;
+}
+.logo_fuel{
+    width: 10%;
+    padding-left: 85%;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+
+    
