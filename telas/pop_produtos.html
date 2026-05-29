@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Produto</title>
+    <link href="../css/estilo_produtos.css" rel="stylesheet">
+</head>
+
+<body class="body-popup">
+
+<main class="pop-main">
+
+    <div class="pop-card">
+
+        <h1 id="nome-produto"></h1>
+
+        <div class="slider">
+            <button class="btn-slider" onclick="voltarImagem()">‹</button>
+
+            <img id="img-produto" src="">
+
+            <button class="btn-slider" onclick="avancarImagem()">›</button>
+        </div>
+
+        <p id="desc-produto"></p>
+
+    </div>
+
+</main>
+
+<script>
+    var produtos = [
+        {
+            nome: "FT700",
+            imagem: "../img/Produtos/FT700.jpg",
+            descricao: "Módulo de controle para sistema de injeção eletrônica em veículos automotores. A FT700 é o mais avançado sistema de controle e monitoramento de motores da FuelTech."
+        },
+        {
+            nome: "FT STREET - FT BY LOTSE",
+            imagem: "../img/Produtos/Lotse.jpg",
+            descricao: "O FT Street faz parte da família de volantes de automobilismo e nasceu da Collab FuelTech by Lotse, desenvolvido para uso tanto na rua quanto nas pistas."
+        },
+        {
+            nome: "Manopla Race FuelTech",
+            imagem: "../img/Produtos/Manopla.jpg",
+            descricao: "Manopla em alumínio, robusta e de fácil instalação, com sensor para GearController já instalado."
+        },
+        {
+            nome: "FT Air Filter Cônico",
+            imagem: "../img/Produtos/Filro.jpg",
+            descricao: "Filtro de altíssima qualidade, desenvolvido para garantir melhor fluxo de ar, maior eficiência e proteção para o motor."
+        },
+        {
+            nome: "Boné Preto Clássico FuelTech",
+            imagem: "../img/Produtos/Bone.jpg",
+            descricao: "Boné Preto Clássico FuelTech, modelo estruturado com 6 gomos, visual esportivo e acabamento de qualidade."
+        },
+        {
+            nome: "Camiseta FuelTech - Logo em Carbono",
+            imagem: "../img/Produtos/Camiseta.jpg",
+            descricao: "Camiseta FuelTech 100% algodão, manga curta, gola redonda e logo em carbono."
+        }
+    ];
+
+    var parametros = new URLSearchParams(window.location.search);
+    var indiceAtual = Number(parametros.get("id"));
+
+    function mostrarProduto(){
+        document.getElementById("nome-produto").textContent = produtos[indiceAtual].nome;
+        document.getElementById("img-produto").src = produtos[indiceAtual].imagem;
+        document.getElementById("desc-produto").textContent = produtos[indiceAtual].descricao;
+    }
+
+    function avancarImagem(){
+        indiceAtual++;
+
+        if(indiceAtual >= produtos.length){
+            indiceAtual = 0;
+        }
+
+        mostrarProduto();
+    }
+
+    function voltarImagem(){
+        indiceAtual--;
+
+        if(indiceAtual < 0){
+            indiceAtual = produtos.length - 1;
+        }
+
+        mostrarProduto();
+    }
+
+    mostrarProduto();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Título */
+.contatos-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    list-style: none;
+}
+
+.contatos-item:before{
+     content: "🚀";
+}
+
+.texto-contatos{
+    color: rgb(7, 0, 0);
+    padding-left: 5%;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+/* Formulário */
+form{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+legend{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+form label{
+    display: block;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+fieldset{
+    border: 2px solid #8b0000;
+    border-radius: 15px;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px rgba(139,0,0,0.6);
+}
+
+
+.input-padrao{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background: #1a1a1a;
+    color: white;
+    font-size: 16px;
+}
+
+
+.input-padrao:focus{
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 10px red;
+}
+
+textarea{
+    resize: none;
+}
+
+select{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: white;
+    border: 1px solid #444;
+}
+
+.chk{
+    margin-top: 25px;
+}
+
+.enviar{
+    width: 100%;
+    margin-top: 30px;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #8b0000, #ff0000);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.enviar:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px red;
+}
+
+
+.divRetorno{
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+
+.divRetorno p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}

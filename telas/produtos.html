@@ -1,0 +1,128 @@
+<html>
+<head>
+    <link href="../css/estilo_produtos.css" rel="stylesheet"/>
+    <link href="../css/estilo.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Produtos</title>
+
+    <script>
+        function abrirDetalhes(indice){
+            var largura = 800;
+            var altura = 700;
+
+            var esquerda = (screen.width / 2) - (largura / 2);
+            var topo = (screen.height / 2) - (altura / 2);
+
+            var url = "pop_produtos.html?id=" + indice;
+
+            window.open(
+                url,
+                "popup",
+                "width=" + largura + ",height=" + altura + ",top=" + topo + ",left=" + esquerda
+            );
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <div class="divHeader">
+        <img src="../img/fuel.png" class="logo"/>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <ul class="produtos-titulo">
+        <li>Produtos</li>
+    </ul>
+
+    <p class="texto-produtos">
+        Faça parte da nossa história!
+    </p>
+
+    <p class="data">
+        <script type="text/JavaScript">
+            dia = new Array("Domingo","Segunda-Feira", "Terça-Feira", "Quarta-Feira","Quinta-Feira","Sexta-Feira","Sábado");
+
+            mes = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
+
+            data = new Date();
+
+            document.write(
+                dia[data.getDay()] + " , " +
+                data.getDate() + " de " +
+                mes[data.getMonth()] + " de " +
+                data.getFullYear()
+            );
+        </script>
+    </p>
+
+    <div class="container">
+
+        <div class="card" onclick="abrirDetalhes(0)">
+            <img src="../img/Produtos/FT700.jpg"/>
+            <h2>FT700</h2>
+            <p>O mais avançado sistema de controlamento de motores</p>
+            <p class="preco">R$ 22.390,00</p>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes(1)">
+            <img src="../img/Produtos/Lotse.jpg"/>
+            <h2>FT STREET - FT BY LOTSE</h2>
+            <p>O FT Street tem design inspirado nos lendários JDMs dos anos 90.</p>
+            <p class="preco">R$ 909,00</p>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes(2)">
+            <img src="../img/Produtos/Manopla.jpg"/>
+            <h2>Manopla race Fueltech</h2>
+            <p>Manopla RACE FuelTech com sensor para GearController.</p>
+            <p class="preco">R$ 649,00</p>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes(3)">
+            <img src="../img/Produtos/Filro.jpg"/>
+            <h2>FT Air Filter Cônico</h2>
+            <p>Ele garante um fluxo de ar elevado, gerando maior eficiência e garantindo a vida útil prolongada do motor.</p>
+            <p class="preco">R$ 399,00</p>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes(4)">
+            <img src="../img/Produtos/Bone.jpg"/>
+            <h2>Boné Preto Clássico Fueltech</h2>
+            <p>Boné Preto Clássico FuelTech.</p>
+            <p class="preco">R$ 79,00</p>
+        </div>
+
+        <div class="card" onclick="abrirDetalhes(5)">
+            <img src="../img/Produtos/Camiseta.jpg"/>
+            <h2>Camiseta FuelTech - Logo em Carbono</h2>
+            <p>Camiseta Básica gola redonda</p>
+            <p class="preco">R$ 89,00</p>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <img src="../img/fuel.png" title="FuelTech" class="logo_fuel"/>
+            <p>  Duvídas
+                <a href="https:wa.me/5511979623246"><i class="fa fa-whatsapp"></i></a>
+                (11) 97962-3246 | <a href="https://instagram.com/FuelTech_">
+                    <i class="fa fa-instagram"></i></a> @FuelTech_</p>
+    </p>
+</footer>
+
+</body>
+</html>
